@@ -22,15 +22,15 @@ public class BoardManager : MonoBehaviour
     
     private void Start()
     {
-        GenerateBoard();
+        GenerateBoard(gridWidth, gridHeight);
     }
     
-    private void GenerateBoard()
+    internal void GenerateBoard(int width, int height)
     {
-        for (int y = 0; y < gridHeight; y++)
+        for (int y = 0; y < height; y++)
         {
             List<Node> row = new();
-            for (int x = 0; x < gridWidth; x++)
+            for (int x = 0; x < width; x++)
             {
                 Vector3 pos = new Vector3(x * gridGap, y * gridGap, 0f);
                 GameObject tileObj = Instantiate(floorTileObj, pos, Quaternion.identity);
@@ -39,6 +39,6 @@ public class BoardManager : MonoBehaviour
             }
             nodes.Add(row);
         }
-        pathfinding.Init(nodes);
+        pathfinding.Init(nodes, width, height);
     }
 }

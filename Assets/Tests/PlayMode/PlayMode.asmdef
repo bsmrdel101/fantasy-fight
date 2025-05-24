@@ -2,5 +2,6 @@
     "name": "PlayMode",
     "optionalUnityReferences": [
         "TestAssemblies"
-    ]
+    ],
+    "references":[ "GUID:a484fa08ffaf91b4581393975ed05dca" ]
 }
