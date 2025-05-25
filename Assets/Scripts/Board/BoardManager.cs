@@ -10,7 +10,6 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private int gridWidth = 24;
     [SerializeField] private int gridHeight = 15;
     [SerializeField] private float gridGap = 1.05f;
-    [SerializeField] private int charactersPerPlayer = 4;
     
     [Header("Map Generation")]
     [SerializeField] private float seed = 0f;
@@ -29,13 +28,14 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private Pathfinding pathfinding;
     
     
-    private void Start()
+    public Vector2 GetSize() => new Vector2(gridWidth, gridHeight);
+    public float GetSeed() => seed;
+    
+    private void Awake()
     {
         mapPadding = Math.Max(mapPadding - 1, 0);
         noiseOffsetX = Random.Range(0f, 9999f);
         noiseOffsetY = Random.Range(0f, 9999f);
-        GenerateBoard(gridWidth, gridHeight, seed);
-        SpawnCharacters();
     }
     
     internal void GenerateBoard(int width, int height, float seed = 0f)
@@ -54,23 +54,6 @@ public class BoardManager : MonoBehaviour
             nodes.Add(row);
         }
         pathfinding.Init(nodes, width, height);
-    }
-
-    private void SpawnCharacters()
-    {
-        int y = 0;
-        for (int i = 0; i < charactersPerPlayer * 2; i++)
-        {
-            float spacing = gridWidth / (float)(charactersPerPlayer + 1);
-            int x = Mathf.RoundToInt((i + 1) * spacing);
-            SpawnCharacterAt(x, y, null);
-            if (charactersPerPlayer / 2 == i - 1) y = gridHeight - 1;
-        }
-    }
-
-    private void SpawnCharacterAt(int x, int y, CharacterData characterData)
-    {
-        
     }
     
     private float GenerateNoise(int x, int y, float seed) 
@@ -96,5 +79,12 @@ public class BoardManager : MonoBehaviour
             NodeType.Wall => wallTileObj,
             _ => null
         };
+    }
+
+    public Vector2 ParseGridCoords(int x, int y)
+    {
+        float worldX = x * gridGap;
+        float worldY = y * gridGap;
+        return new Vector2(worldX, worldY);
     }
 }
