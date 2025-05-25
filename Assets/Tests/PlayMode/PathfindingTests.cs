@@ -21,7 +21,7 @@ public class PathfindingTests
     {
         yield return new WaitUntil(() => GameObject.Find("BoardManager") != null);
         boardManager = GameObject.Find("BoardManager").GetComponent<BoardManager>();
-        boardManager.GenerateBoard(24, 15);
+        boardManager.GenerateBoard(24, 15, 69420f);
         pathfinding = boardManager.GetComponent<Pathfinding>();
         Assert.IsNotNull(pathfinding, "Pathfinding script not found in scene.");
     }
@@ -35,6 +35,14 @@ public class PathfindingTests
         }
         return path;
     }
+
+    [UnityTest]
+    public IEnumerator FindPath_InvalidPath()
+    {
+        yield return null;
+        Node[] nodePath = pathfinding.FindPath(new Vector2(0, 0), new Vector2(3, 3));
+        Assert.AreEqual(nodePath.Length, 0, "Destination should be unreachable inside wall.");
+    }
     
     [UnityTest]
     public IEnumerator FindPath_ReturnExpectedPath()
@@ -44,7 +52,9 @@ public class PathfindingTests
         {
             new Vector2(0, 0),
             new Vector2(1, 1),
-            new Vector2(2, 2),
+            new Vector2(1, 2),
+            new Vector2(1, 3),
+            new Vector2(2, 4),
             new Vector2(3, 3)
         };
         Node[] nodePath = pathfinding.FindPath(new Vector2(0, 0), new Vector2(3, 3));

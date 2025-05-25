@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 41
+  controlID: 132
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 42
+  controlID: 102
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 46
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 53
+  controlID: 103
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -325,15 +325,15 @@ MonoBehaviour:
     y: 0
     width: 458
     height: 933
-  m_MinSize: {x: 276, y: 76}
+  m_MinSize: {x: 101, y: 126}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -476,7 +476,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 00c7ffff6cd3ffff8cd4fffff4d4ffff06ecffff
+      m_ExpandedIDs: a013ffff8828ffff2840ffff3a5affff125ffffffa73ffff0e8effff629dffff029effff889fffffb8a2ffffc0a6ffffa6b5ffff6cb8ffffccb9ffffbebaffff04bcffff58c1ffff0cfbffffc4b60000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1066,9 +1066,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 9.259022, y: 2.353517, z: -4.4990683}
+    m_Target: {x: 11.565093, y: 4.7703996, z: -4.508047}
     speed: 2
-    m_Value: {x: 9.259022, y: 2.353517, z: -4.4990683}
+    m_Value: {x: 11.565093, y: 4.7703996, z: -4.508047}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1118,9 +1118,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.75696
+    m_Target: 10.654844
     speed: 2
-    m_Value: 9.75696
+    m_Value: 10.654844
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Pathfinding
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1283,16 +1283,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Pathfinding
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\firek\Documents\repos\Coding\Fantasy Fight
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60df0000
-    m_LastClickedID: 57184
-    m_ExpandedIDs: 00000000e4ae0000e6ae0000e8ae0000
+    m_SelectedIDs: e4b00000
+    m_LastClickedID: 45284
+    m_ExpandedIDs: 00000000e8ae0000eaae0000ecae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1321,7 +1321,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e4ae0000e6ae0000e8ae0000
+    m_ExpandedIDs: 00000000e8ae0000eaae0000ecae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1475,8 +1475,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1463
-    y: 24
+    x: 1462
+    y: 79
     width: 457
     height: 907
   m_SerializedDataModeController:
@@ -1589,8 +1589,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Test Runner\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1462
-    y: 79
+    x: 1463
+    y: 24
     width: 457
     height: 907
   m_SerializedDataModeController:
@@ -1605,7 +1605,7 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 347
+    ID: 308
     splitterInitialOffset: 266
     currentActiveSplitter: -1
     realSizes:
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_TestListGUIs:
   - m_Window: {fileID: 23}
     runProgress:
-      RunGuid: c352568a-3041-4a89-9ee3-fd098eab081d
+      RunGuid: 9205d12a-0c43-49ed-aa92-70948b64f6a4
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -1659,90 +1659,7 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999994
-      CurrentStepName: Unlock Reload Assemblies
-      CurrentStageName: 
-    m_NewResultList:
-    - id: 1000
-      uniqueId: '[2D platformer][suite]'
-      name: 2D platformer
-      fullName: 2D platformer
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 901ef05cffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategories: []
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  - m_Window: {fileID: 23}
-    runProgress:
-      RunGuid: c352568a-3041-4a89-9ee3-fd098eab081d
-      ExecutionSettings:
-        m_TargetPlatform: 0
-        m_HasTargetPlatform: 0
-        filter:
-          testMode: 0
-          testNames: []
-          groupNames: []
-          categoryNames: []
-          assemblyNames: []
-        filters:
-        - testMode: 2
-          testNames: []
-          groupNames: []
-          categoryNames: []
-          assemblyNames: []
-        runSynchronously: 0
-        playerHeartbeatTimeout: 600
-        orderedTestNames: []
-        ignoreTests: []
-        featureFlags:
-          fileCleanUpCheck: 0
-          requiresSplashScreen: 0
-          strictDomainReload: 0
-          disableNestedEnumeratorBugfix: 0
-        randomOrderSeed: 0
-      HasFinished: 1
-      Progress: 0.99999994
+      Progress: 0.9999999
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
@@ -1762,27 +1679,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: "DealingDamage_ReducesHP_WhenDefenseIsZero (0.011s)\n---\n  Player
-      HP should be reduced by 10 from 100 to 90.\r\n  Expected: 90\r\n  But was: 
-      100\r\n\n---\nat MinionControllerTests+<DealingDamage_ReducesHP_WhenDefenseIsZero>d__3.MoveNext
-      () [0x00058] in <color=#40a0ff><a href=\"C:\\Users\\firek\\Documents\\repos\\Tutoring\\RPG
-      Mechanics\\Assets\\Tests\\PlayMode\\MinionControllerTests.cs\" line=\"35\r\">Assets\\Tests\\PlayMode\\MinionControllerTests.cs:35\r</a></color>\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in
-      <color=#40a0ff><a href=\".\\Library\\PackageCache\\com.unity.test-framework@388540dd9ce6\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs\"
-      line=\"44\r\">Library\\PackageCache\\com.unity.test-framework@388540dd9ce6\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r</a></color>"
-    m_ResultStacktrace: 'at MinionControllerTests+<DealingDamage_ReducesHP_WhenDefenseIsZero>d__3.MoveNext
-      () [0x00058] in C:\Users\firek\Documents\repos\Tutoring\RPG Mechanics\Assets\Tests\PlayMode\MinionControllerTests.cs:35
-
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in
-      .\Library\PackageCache\com.unity.test-framework@388540dd9ce6\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
-
-'
+    m_ResultText: 
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 94f0c30b
-      m_LastClickedID: 197390484
-      m_ExpandedIDs: 029c1a89de14e89a1edb8ce2f3d9c211369e7c321ab97534ceab2b4f901ef05cffffff7f
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1edb8ce2901ef05cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1812,7 +1715,7 @@ MonoBehaviour:
     m_SelectedOption: 0
   - m_Window: {fileID: 23}
     runProgress:
-      RunGuid: c352568a-3041-4a89-9ee3-fd098eab081d
+      RunGuid: 9205d12a-0c43-49ed-aa92-70948b64f6a4
       ExecutionSettings:
         m_TargetPlatform: 0
         m_HasTargetPlatform: 0
@@ -1839,7 +1742,139 @@ MonoBehaviour:
           disableNestedEnumeratorBugfix: 0
         randomOrderSeed: 0
       HasFinished: 1
-      Progress: 0.99999994
+      Progress: 0.9999999
+      CurrentStepName: Unlock Reload Assemblies
+      CurrentStageName: 
+    m_NewResultList:
+    - id: 1008
+      uniqueId: '[Fantasy Fight][suite]'
+      name: Fantasy Fight
+      fullName: Fantasy Fight
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1003
+      uniqueId: '[PlayMode][C:/Users/firek/Documents/repos/Coding/Fantasy Fight/Library/ScriptAssemblies/PlayMode.dll][suite]'
+      name: PlayMode.dll
+      fullName: C:/Users/firek/Documents/repos/Coding/Fantasy Fight/Library/ScriptAssemblies/PlayMode.dll
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: '[Fantasy Fight][suite]'
+    - id: 1001
+      uniqueId: 'PlayMode.dll/[PlayMode][PathfindingTests][suite]'
+      name: PathfindingTests
+      fullName: PathfindingTests
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[PlayMode][C:/Users/firek/Documents/repos/Coding/Fantasy Fight/Library/ScriptAssemblies/PlayMode.dll][suite]'
+    - id: 1002
+      uniqueId: 'PlayMode.dll/PathfindingTests/[PlayMode][PathfindingTests.FindPath_ReturnExpectedPath]'
+      name: FindPath_ReturnExpectedPath
+      fullName: PathfindingTests.FindPath_ReturnExpectedPath
+      resultStatus: 1
+      duration: 0.2536053
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'PlayMode.dll/[PlayMode][PathfindingTests][suite]'
+    m_ResultText: FindPath_ReturnExpectedPath (0.254s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: c2f509d6
+      m_LastClickedID: -703990334
+      m_ExpandedIDs: 4c4b3282029c1a89de14e89a88f9aadc1edb8ce2f3d9c211369e7c321ab97534ceab2b4f901ef05cffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_TrimLeadingAndTrailingWhitespace: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  - m_Window: {fileID: 23}
+    runProgress:
+      RunGuid: 9205d12a-0c43-49ed-aa92-70948b64f6a4
+      ExecutionSettings:
+        m_TargetPlatform: 0
+        m_HasTargetPlatform: 0
+        filter:
+          testMode: 0
+          testNames: []
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        filters:
+        - testMode: 2
+          testNames: []
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        runSynchronously: 0
+        playerHeartbeatTimeout: 600
+        orderedTestNames: []
+        ignoreTests: []
+        featureFlags:
+          fileCleanUpCheck: 0
+          requiresSplashScreen: 0
+          strictDomainReload: 0
+          disableNestedEnumeratorBugfix: 0
+        randomOrderSeed: 0
+      HasFinished: 1
+      Progress: 0.9999999
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
