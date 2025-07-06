@@ -13,7 +13,7 @@ public class BoardManager : MonoBehaviour
     
     [Header("Map Generation")]
     [SerializeField] private float seed = 0f;
-    [SerializeField] private float noiseIntensity = 1f;
+    [SerializeField] private float noiseIntensity = 6f;
     [SerializeField] private int mapPadding = 2;
     private float noiseOffsetX;
     private float noiseOffsetY;
@@ -29,6 +29,7 @@ public class BoardManager : MonoBehaviour
     
     
     public Vector2 GetSize() => new Vector2(gridWidth, gridHeight);
+    public float GetGridGap() => gridGap;
     public float GetSeed() => seed;
     
     private void Awake()
@@ -79,12 +80,5 @@ public class BoardManager : MonoBehaviour
             NodeType.Wall => wallTileObj,
             _ => null
         };
-    }
-
-    public Vector2 ParseGridCoords(int x, int y)
-    {
-        float worldX = x * gridGap;
-        float worldY = y * gridGap;
-        return new Vector2(worldX, worldY);
     }
 }

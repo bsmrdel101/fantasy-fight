@@ -6,10 +6,10 @@ using UnityEngine.TestTools;
 
 public class BoardTests
 {
-    [OneTimeSetUp]
-    public void Setup()
+    [UnityOneTimeSetUp]
+    public IEnumerator OneTimeSetup()
     {
         Debug.unityLogger.logEnabled = false;
-        SceneManager.LoadScene("Testing");
+        yield return SceneManager.LoadSceneAsync("Testing");
     }
 }

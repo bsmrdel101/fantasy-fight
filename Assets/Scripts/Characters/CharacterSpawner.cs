@@ -4,7 +4,7 @@ using UnityEngine;
 public class CharacterSpawner : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private BoardManager boardManager;
+    [SerializeField] private Utils utils;
     [SerializeField] private Transform charactersContainer;
     [SerializeField] private GameObject characterPrefab;
     
@@ -26,7 +26,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private void SpawnCharacterAt(int x, int y, CharacterData characterData)
     {
-        Vector2 coords = boardManager.ParseGridCoords(x, y);
+        Vector2 coords = utils.ParseGridCoords(x, y);
         List<Character> characters = new();
         characterPrefab.GetComponent<SpriteRenderer>().sprite = characterData.sprite;
         GameObject obj = Instantiate(characterPrefab, new Vector3(coords.x, coords.y), Quaternion.identity);

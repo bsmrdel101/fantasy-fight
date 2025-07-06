@@ -35,13 +35,13 @@ public class PathfindingTests
         }
         return path;
     }
-
+    
     [UnityTest]
-    public IEnumerator FindPath_InvalidPath()
+    public IEnumerator FindPath_Blocked()
     {
         yield return null;
-        Node[] nodePath = pathfinding.FindPath(new Vector2(0, 0), new Vector2(3, 3));
-        Assert.AreEqual(nodePath.Length, 0, "Destination should be unreachable inside wall.");
+        Node[] nodePath = pathfinding.FindPath(new Vector2(0, 0), new Vector2(2, 2));
+        Assert.AreEqual(0, nodePath.Length, "Destination should be inside a wall.");
     }
     
     [UnityTest]
@@ -52,9 +52,9 @@ public class PathfindingTests
         {
             new Vector2(0, 0),
             new Vector2(1, 1),
-            new Vector2(1, 2),
-            new Vector2(1, 3),
-            new Vector2(2, 4),
+            new Vector2(2, 1),
+            new Vector2(3, 1),
+            new Vector2(4, 2),
             new Vector2(3, 3)
         };
         Node[] nodePath = pathfinding.FindPath(new Vector2(0, 0), new Vector2(3, 3));
